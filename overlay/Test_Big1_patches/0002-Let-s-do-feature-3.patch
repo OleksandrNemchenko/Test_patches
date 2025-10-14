@@ -1,0 +1,26 @@
+From 4b504aa061a6fc4418b8cc4076d901ee9872d654 Mon Sep 17 00:00:00 2001
+From: Barbeque Meal <petr125g@gmail.com>
+Date: Mon, 13 Oct 2025 18:14:58 +0300
+Subject: [PATCH 2/2] Let's do feature 3
+
+---
+ commit 4.txt | 0
+ commits.txt  | 2 +-
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 100644 commit 4.txt
+
+diff --git a/commit 4.txt b/commit 4.txt
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/commits.txt b/commits.txt
+index c68e040..198fe6b 100644
+--- a/commits.txt
++++ b/commits.txt
+@@ -1 +1 @@
+-feature 2
+\ No newline at end of file
++feature 3
+\ No newline at end of file
+-- 
+2.40.1.windows.1
+
