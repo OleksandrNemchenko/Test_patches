@@ -1,0 +1,31 @@
+From 9fcd4cbf4d22345ce0beaef3bda7395ec28be7aa Mon Sep 17 00:00:00 2001
+From: Barbeque Meal <petr125g@gmail.com>
+Date: Tue, 14 Oct 2025 16:12:32 +0300
+Subject: [PATCH 3/4] Make feature 4
+
+---
+ Commit 5.txt  | 0
+ commits.txt   | 2 +-
+ feature 4.txt | 0
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 Commit 5.txt
+ create mode 100644 feature 4.txt
+
+diff --git a/Commit 5.txt b/Commit 5.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/commits.txt b/commits.txt
+index 198fe6b..156c308 100644
+--- a/commits.txt
++++ b/commits.txt
+@@ -1 +1 @@
+-feature 3
+\ No newline at end of file
++feature 4
+\ No newline at end of file
+diff --git a/feature 4.txt b/feature 4.txt
+new file mode 100644
+index 0000000..e69de29
+-- 
+2.40.1.windows.1
+

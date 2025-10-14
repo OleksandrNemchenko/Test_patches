@@ -1,4 +1,7 @@
+# External projects
 Test_Big1
 Test_Big2
 
+# Some local stuff
 .vs
+*.pyproj
