@@ -48,8 +48,8 @@ def make_commit(git_commands, project_name: str = None):
     cmd.append('commit')
     cmd.extend(git_commands)
 
-    _, returncode = execute_cmd(cmd)
-    if not returncode == 0:
+    output, returncode = execute_cmd(cmd)
+    if not returncode == 0 and not (returncode == 1 and "nothing to commit, working tree clean" in output):
         raise Exception(f'Unable to make commit')
 
 def make_patches(project_name: str):
