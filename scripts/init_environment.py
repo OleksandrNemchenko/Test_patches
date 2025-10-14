@@ -43,7 +43,7 @@ def main():
     global args
 
     parser = argparse.ArgumentParser(description = "Init environment")
-    parser.add_argument("--path", type = str, required = False, default = os.getcwd(), help = "The directory with the project")
+    parser.add_argument("path", type = str, default = os.getcwd(), help = "The directory with the project")
     args = parser.parse_args()
     args.path = Path(args.path)
 
