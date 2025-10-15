@@ -2,6 +2,9 @@
 Test_Big1
 Test_Big2
 
+# Patches
+overlay/applied_patches.json
+
 # Some local stuff
 .vs
 *.pyproj
