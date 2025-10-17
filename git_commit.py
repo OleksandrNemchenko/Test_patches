@@ -7,8 +7,9 @@ import traceback
 from loguru import logger
 from pathlib import Path
 
+from constants import patches_dir, projects, patch_name_suffix
+
 args = None
-projects = ['Test_Big1', 'Test_Big2']
 
 def execute_cmd(command):
     command_line = " ".join(command)
@@ -63,7 +64,7 @@ def make_patches(project_name: str):
         upstream = args.upstream
 
     logger.info(f'Make patches for {project_name} for {upstream} upstream')
-    execute_cmd([f'git -C {str(args.path / project_name)} format-patch {upstream} -o {str(args.path / "overlay" / f"{project_name}_patches")}'])
+    execute_cmd([f'git -C {str(args.path / project_name)} format-patch {upstream} -o {str(args.path / patches_dir / f"{project_name}{patch_name_suffix}")}'])
 
 def main():
     global args
@@ -81,6 +82,10 @@ def main():
 
     [make_commit(git_commands, project) for project in projects]
     [make_patches(project) for project in projects]
+
+    logger.info(f'Add patch files to the new commit')
+    execute_cmd([f'git -C {str(args.path)} add {str(args.path / patches_dir / "*")}'])
+
     make_commit(git_commands)
 
 if __name__ == "__main__":

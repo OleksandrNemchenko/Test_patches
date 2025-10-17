@@ -1,7 +1,7 @@
 From 42024251b5f7f3f55c05faebe8bc989414b9aa54 Mon Sep 17 00:00:00 2001
 From: Barbeque Meal <petr125g@gmail.com>
 Date: Tue, 14 Oct 2025 16:17:49 +0300
-Subject: [PATCH 2/3] Some feature 5
+Subject: [PATCH 2/4] Some feature 5
 
 ---
  main.cpp | 2 +-

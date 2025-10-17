@@ -8,3 +8,4 @@ overlay/applied_patches.json
 # Some local stuff
 .vs
 *.pyproj
+__pycache__

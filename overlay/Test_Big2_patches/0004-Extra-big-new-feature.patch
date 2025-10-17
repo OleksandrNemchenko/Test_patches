@@ -1,0 +1,21 @@
+From 48064350ac1a185b45298d5d7ad8fa8c2557cbb4 Mon Sep 17 00:00:00 2001
+From: Barbeque Meal <petr125g@gmail.com>
+Date: Fri, 17 Oct 2025 17:46:43 +0300
+Subject: [PATCH 4/4] Extra big new feature
+
+---
+ exxtra_big_new_feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 exxtra_big_new_feature.txt
+
+diff --git a/exxtra_big_new_feature.txt b/exxtra_big_new_feature.txt
+new file mode 100644
+index 0000000..24a90d8
+--- /dev/null
++++ b/exxtra_big_new_feature.txt
+@@ -0,0 +1 @@
++Content
+\ No newline at end of file
+-- 
+2.40.1.windows.1
+
